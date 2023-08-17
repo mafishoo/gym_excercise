@@ -8,7 +8,7 @@ import HeroBanner from '../components/heroBanner/HeroBanner'
 const Home = () => {
   return (
     <Box> 
-    <HeroBanner/>
+    <HeroBanner/> 
     <SearchExcercise/>
     <Excercises/>
      </Box>

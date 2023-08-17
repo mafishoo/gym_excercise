@@ -6,24 +6,32 @@ import "./NavBar.css";
 
 const NavBar = () => {
   return (
-    <Stack className="navBarContainer" sx={{
-      gap:{
-      sm: '122px', xs:'40px'
-      },
-      mt: {
-        sm: '32px', xs:'20px'
-      },
-      justifyContent: 'none'
-      }
-      
-      }>
+    <Stack justifyContent= 'space-around'
+      direction="row"
+      sx={{
+        gap: {
+          sm: "122px",
+          xs: "40px",
+        },
+        mt: {
+          sm: "32px",
+          xs: "20px",
+        },
+        justifyContent: "none",
+      }}
+      px="20px"
+    >
       <Link to="/">
         <img src={Logo} alt="logo" className="logo" />
       </Link>
-      <Stack  className="navBar">
-        <Link className= "homeLink home" to="/">Home</Link>
-        <a href="#excercises" className="home">Excercises</a>
-      </Stack>
+      <div className="navBar">
+        <Link className="homeLink home" to="/">
+          Home
+        </Link>
+        <a href="#excercises" className="home">
+          Excercises
+        </a>
+      </div>
     </Stack>
   );
 };
